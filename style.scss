@@ -1,0 +1,250 @@
+@import "mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1500px;
+    margin: auto;
+    padding: 0px 100px;
+    // background-color:gold;
+}
+nav{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #4dabff;
+    position: fixed;
+    top: 0;
+    .nav-divs{
+        @include display(space-around,center);
+        gap: 20px;
+        
+        div{
+            height: 80px;
+            background-color: white;
+        }
+        #first{
+            width: 150px;
+            
+        }
+        #second{
+            width: 500px;
+           
+        }
+        #third{
+            width: 150px;
+            
+        }
+    }
+
+}
+
+header{
+    width: 100%;
+    padding: 250px 0px;
+    background-color: #62ddff;
+    .header-div{
+        @include display(space-around, center);
+        div{
+            width: 45%;
+            height: 600px;
+            background-color: lightpink;
+        }
+    }
+}
+
+section{
+    @include fundamental(mediumpurple);
+    .center-sec{
+        @include display;
+        flex-direction: column;
+        gap: 30px;
+        .top{
+            width: 55%;
+            height: 150px;
+            background-color: whitesmoke;
+        }
+        .bottom{
+            width: 100%;
+            height: 300px;
+            @include display(space-between, center);
+            div{
+                width: 30%;
+                height: 100%;
+                background-color: darksalmon;
+            }
+
+        }
+    }
+}
+
+
+.graphic{
+    @include fundamental(darkcyan);
+    .grap-sec{
+        @include display();
+        flex-direction: column;
+        gap: 20px;
+        .top , .bottom{
+            width: 100%;
+        }
+        .top{
+            height: 100px;
+            @include display(space-between,center);
+            div{
+                width: 23%;
+                height: 100%;
+                background-color:gainsboro;
+                border-radius: 10px;
+            }
+        }
+        .bottom{
+            height: 400px;
+            @include display(space-between,center);
+            div{
+                width: 48%;
+                height: 100%;
+                background-color: gainsboro;
+            }
+        }
+    }
+}
+
+.section-3{
+    @include fundamental(lightgreen);
+    .section-3-center{
+        @include display(space-between,center);
+        flex-direction: column;
+        gap: 20px;
+        #top{
+            background-color:lightskyblue;
+            width: 60%;
+            height: 150px;
+        }
+        #bottom{
+            background-color: white;
+
+            width: 50%;
+            height: 400px;
+        }
+    }
+}
+
+.section-4{
+    @include fundamental(hotpink);
+    .sec-center{
+        width: 100%;
+        height: 400px;
+        @include display(space-between,center);
+        div{
+            width: 47%;
+            height: 100%;
+            background-color: bisque;
+        }
+    }
+
+}
+
+.section-5{
+    @include fundamental(#62ddff);
+    .sec-center{
+        @include display;
+        flex-direction: column;
+        gap: 30px;
+        .top{
+            width: 50%;
+            height: 200px;
+            background-color:lightseagreen;
+        }
+        .bottom{
+            width: 100%;
+            height: 500px;
+            @include display(space-between, center);
+            div{
+                width: 30%;
+                height: 100%;
+                background-color:thistle;
+            }
+
+        }
+    }
+}
+
+.section-6{
+    @include fundamental(plum);
+    .sec-center{
+        @include display;
+        flex-direction: column;
+        gap: 30px;
+        .top{
+            width: 50%;
+            height: 200px;
+            background-color:lightgreen;
+        }
+        .bottom{
+            width: 100%;
+            height: 200px;
+            @include display(space-between, center);
+            div{
+                width: 45%;
+                height: 100%;
+                background-color: crimson;
+                border-radius: 10px;
+            }
+
+        }
+    }
+}
+
+.section-7{
+    @include fundamental(hotpink);
+    .sec-center{
+        width: 100%;
+        height: 350px;
+        @include display(space-around,center);
+        div{
+            width: 45%;
+            height: 100%;
+            background-color: black;
+        }
+    }
+
+}
+
+.section-8{
+    @include fundamental(palegreen);
+    #text-div{
+        width: 100%;
+        height: 250px;
+        @include display;  
+        div{
+            width: 50%;
+            height: 100%;
+            background-color: white;
+          
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 120px 0px;
+    background-color: black;
+    .center{
+        width: 100%;
+        @include display(space-between,center);
+        div{
+            background-color: white;
+        }
+        #same{
+            width: 40%;
+            height: 300px;
+        }
+        #different{
+            width: 15%;
+            height: 300px;
+        }
+    }
+}
